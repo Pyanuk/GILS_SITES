@@ -1,0 +1,8 @@
+/*Code just to make sure*/
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}

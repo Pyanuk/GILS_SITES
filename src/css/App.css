@@ -1,0 +1,86 @@
+/* font face start
+implementing fonts SF-PRO-DISPLAY
+*/
+@font-face {
+    font-display: swap; 
+    font-family: 'SF-PRO-DISPLAY';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../../public/fonts/SF/SFPRODISPLAYBLACKITALIC.OTF') format('truetype'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+    font-display: swap; 
+    font-family: 'SF-PRO-DISPLAY';
+    font-style: italic;
+    font-weight: bold;
+    src: url('../../public/fonts/SF/SFPRODISPLAYBOLD.OTF') format('truetype'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face{
+    font-display: swap;
+    font-family: 'SF-PRO-DISPLAY';
+    font-style: italic;
+    font-weight: 800;
+    src: url('../../public/fonts/SF/SFPRODISPLAYHEAVYITALIC.OTF') format('truetype');
+}
+
+@font-face{
+    font-display: swap;
+    font-family: 'SF-PRO-DISPLAY';
+    font-style: italic;
+    font-weight: 300;
+    src: url('../../public/fonts/SF/SFPRODISPLAYLIGHTITALIC.OTF') format('truetype');
+}
+
+@font-face{
+    font-display: swap;
+    font-family: 'SF-PRO-DISPLAY';
+    font-style: normal;
+    src: url('../../public/fonts/SF/SFPRODISPLAYREGULAR.OTF') format('truetype');
+    font-weight: 400;
+}
+
+@font-face{
+    font-display: swap;
+    font-family: 'SF-PRO-DISPLAY';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../../public/fonts/SF/SFPRODISPLAYMEDIUM.OTF') format('truetype');
+}
+
+@font-face{
+    font-display: swap;
+    font-family: 'SF-PRO-DISPLAY';
+    font-style: italic;
+    font-weight: bold;
+    src: url('../../public/fonts/SF/SFPRODISPLAYSEMIBOLDITALIC.OTF') format('truetype');
+}
+
+@font-face{
+    font-display: swap;
+    font-family: 'SF-PRO-DISPLAY';
+    font-style: italic;
+    font-weight: 300;
+    src: url('../../public/fonts/SF/SFPRODISPLAYTHINITALIC.OTF') format('truetype');
+}
+
+@font-face{
+    font-display: swap;
+    font-family: 'SF-PRO-DISPLAY';
+    font-style: italic;
+    font-weight: 100;
+    src: url('../../public/fonts/SF/SFPRODISPLAYULTRALIGHTITALIC.OTF') format('truetype');
+}
+
+/* font face end */
+
+/* normal boxing start using this code to properly store content in blocks */
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+/* normal boxing end */

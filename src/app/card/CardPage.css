@@ -1,0 +1,71 @@
+
+.ticket-content {
+    width: 320px;
+    height: 500px; 
+    border-radius: 20px;
+    padding: 20px;
+    font-family: monospace;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+
+  .ticket-content.dimming {
+    background-color: #ccc;
+  }
+  
+
+  .ticket-content.pattern {
+    background: linear-gradient(135deg, #f9d423, #ff4e50, #a18cd1);
+    background-size: 200% 200%;
+    animation: gradientMove 6s ease infinite;
+  }
+  
+  @keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+
+  .ticket-content.mask-blend {
+    background-image:
+      url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><rect width='100%' height='100%' fill='white'/><circle cx='50' cy='50' r='20' fill='black' /></svg>"),
+      linear-gradient(135deg, #ff4e50, #f9d423);
+    background-blend-mode: screen;
+    background-size: cover;
+  }
+  
+
+  
+  .ticket-content.specular::before {
+    content: '';
+    position: absolute;
+    top: -30%; 
+    left: -30%; 
+    width: 160%; 
+    height: 160%; 
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.4) 0%, transparent 60%);
+    transform: rotate(25deg);
+    animation: shine 4s infinite;
+  }
+  
+  @keyframes shine {
+    0% { transform: translateX(-100%) rotate(25deg); }
+    100% { transform: translateX(100%) rotate(25deg); }
+  }
+  
+
+  .ticket-wrapper {
+    perspective: 1000px;
+    width: fit-content;
+    margin: 0 auto;
+    transform-style: preserve-3d;
+  }

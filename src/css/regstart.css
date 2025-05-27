@@ -1,0 +1,349 @@
+
+/* font face start
+implementing fonts SF-PRO-DISPLAY
+doesnt work without it
+*/
+@font-face {
+    font-display: swap; 
+    font-family: 'SF-PRO-DISPLAY';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../../public/fonts/SF/SFPRODISPLAYBLACKITALIC.OTF') format('truetype'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+    font-display: swap; 
+    font-family: 'SF-PRO-DISPLAY';
+    font-style: italic;
+    font-weight: bold;
+    src: url('../../public/fonts/SF/SFPRODISPLAYBOLD.OTF') format('truetype'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face{
+    font-display: swap;
+    font-family: 'SF-PRO-DISPLAY';
+    font-style: italic;
+    font-weight: 800;
+    src: url('../../public/fonts/SF/SFPRODISPLAYHEAVYITALIC.OTF') format('truetype');
+}
+
+@font-face{
+    font-display: swap;
+    font-family: 'SF-PRO-DISPLAY';
+    font-style: italic;
+    font-weight: 300;
+    src: url('../../public/fonts/SF/SFPRODISPLAYLIGHTITALIC.OTF') format('truetype');
+}
+
+@font-face{
+    font-display: swap;
+    font-family: 'SF-PRO-DISPLAY';
+    font-style: normal;
+    src: url('../../public/fonts/SF/SFPRODISPLAYREGULAR.OTF') format('truetype');
+    font-weight: 400;
+}
+
+@font-face{
+    font-display: swap;
+    font-family: 'SF-PRO-DISPLAY';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../../public/fonts/SF/SFPRODISPLAYMEDIUM.OTF') format('truetype');
+}
+
+@font-face{
+    font-display: swap;
+    font-family: 'SF-PRO-DISPLAY';
+    font-style: italic;
+    font-weight: bold;
+    src: url('../../public/fonts/SF/SFPRODISPLAYSEMIBOLDITALIC.OTF') format('truetype');
+}
+
+@font-face{
+    font-display: swap;
+    font-family: 'SF-PRO-DISPLAY';
+    font-style: italic;
+    font-weight: 300;
+    src: url('../../public/fonts/SF/SFPRODISPLAYTHINITALIC.OTF') format('truetype');
+}
+
+@font-face{
+    font-display: swap;
+    font-family: 'SF-PRO-DISPLAY';
+    font-style: italic;
+    font-weight: 100;
+    src: url('../../public/fonts/SF/SFPRODISPLAYULTRALIGHTITALIC.OTF') format('truetype');
+}
+/* font face end*/
+/* rgstart contains css code for regcard that we use for all other pages*/
+
+/* backgroudn gradient start*/
+.background-gradient-start{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #8800FF;
+    background: linear-gradient(90deg,rgba(136, 0, 255, 1) 0%, rgba(81, 28, 232, 1) 100%);    z-index: -1; 
+    border-radius: 30px;
+    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 95%, rgba(0,0,0,1) 100%);
+    mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 95%, rgba(0,0,0,1) 100%);
+}
+/* background gradient end*/
+
+/* regcard start*/
+.regcard{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: #171717;
+    width: 475px;
+    height: 510px;
+    border-radius: 30px;
+}
+
+.upperbuttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px 35px 20px 35px;
+}
+
+.crossbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1C1C1C;
+    border: 0;
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    padding: 0;
+    transition: transform 0.5s, background 0.5s;
+}
+
+.crossbutton:hover{
+    transform: scale(1.05);
+    background: #7C7C7C;
+}
+
+.imagebtnunion{
+    height: 75%;
+    width: 75%;
+}
+
+.unionbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1C1C1C;
+    border: 0;
+    height: 65px;
+    width: 65px;
+    border-radius: 100%;
+    padding: 0;
+    transition: transform 0.5s, background 0.5s;
+}
+
+.unionbutton:hover{
+    transform: scale(1.05);
+    background: #7C7C7C;
+}
+
+.reg-card-desc{
+    font-family: 'SF-PRO-DISPLAY';
+
+    margin-top: 0px;
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start; 
+    font-family: 'SF-PRO-DISPLAY';
+    margin: 0px 30px;
+}
+
+.regcardtext{
+    font-family: 'SF-PRO-DISPLAY';
+
+    font-weight: bold;
+    margin: 0px;
+    color: #FFFFFF;
+}
+
+.bottom-text{
+    margin-top: 10px;
+    font-weight: bold;
+    color: #A6A6A6;
+}
+
+.button-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    gap: 25px;
+}
+
+/* need to be fixed*/
+.create-accoutn-button{
+    border: 0;
+   font-weight: bold; 
+   height: 65px;
+   width: 410px; 
+   border-radius: 10px;
+   color: white;
+   font-size: 21px;
+   background: #8800FF;
+   background: linear-gradient(90deg, rgba(136, 0, 255, 1) 0%,  rgba(78, 115, 255, 1) 100%);
+
+   transition: transform 0.5s, background 0.5s;
+}
+
+.create-accoutn-button:hover{
+    transform: scale(1.05);
+    background: #7C7C7C;
+}
+
+.login-button{
+    
+    border:0;
+    font-weight: bold;
+    height: 65px;
+    width: 410px;    
+    border-radius: 10px;
+    color: white;
+    font-size: 21px;
+    background-color: #202020;
+    transition: transform 0.5s, background 0.5s;
+}
+
+.login-button:hover{
+    transform: scale(1.05);
+    background: #7C7C7C;
+}
+
+.authorisation-methods{
+    margin: 20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+
+}
+
+/*styles for buttons authorisations with social media like google etc*/
+/* social media button start*/
+.google-btn{
+    border: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 45px;
+    width: 130px;
+    border-radius: 10px;
+    background-color: white;
+    transition: transform 0.5s, background 0.5s;
+}
+
+.google-btn:hover{
+    transform: scale(1.05);
+    background: #7C7C7C;
+}
+
+.apple-btn{
+    border: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 45px;
+    width: 130px;
+    border-radius: 10px;
+    background-color: white;
+    transition: transform 0.5s, background 0.5s;
+}
+
+.apple-btn:hover{
+    transform: scale(1.05);
+    background: #7C7C7C;
+}
+
+.facebook-btn {
+    border: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 45px;
+    width: 130px;
+    border-radius: 10px;
+    background-color: #1877F2;
+    transition: transform 0.5s, background 0.5s;
+
+}
+
+.facebook-btn:hover{
+    transform: scale(1.05);
+    background: #7C7C7C;
+}
+
+.twitch-btn{
+    border: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 45px;
+    width: 130px;
+    border-radius: 10px;
+    background-color: #9147FF;
+    transition: transform 0.5s, background 0.5s;
+
+}
+
+.twitch-btn:hover{
+    transform: scale(1.05);
+    background: #7C7C7C;
+}
+
+.yandex-btn{
+    border: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 45px;
+    width: 130px;
+    border-radius: 10px;
+    background-color: #FC3F1D;
+    transition: transform 0.5s, background 0.5s;
+
+}
+
+.yandex-btn:hover{
+    transform: scale(1.05);
+    background: #7C7C7C;
+
+}
+
+.discrod-btn{
+    border: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 45px;
+    width: 130px;
+    border-radius: 10px;
+    background-color: #5865F2;
+    transition: transform 0.5s, background 0.5s;
+}
+
+.discrod-btn:hover{
+    transform: scale(1.05);
+    background: #7C7C7C;
+}
+/* social media button end*/
+
+/* regcard end*/

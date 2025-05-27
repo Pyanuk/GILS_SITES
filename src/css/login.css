@@ -1,0 +1,69 @@
+
+
+/* using background gradient as another block */
+
+.background-gradient-login{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #8800FF;
+    background: linear-gradient(90deg,rgba(136, 0, 255, 1) 70%, rgba(210, 0, 255, 1) 100%);
+    z-index: -1; 
+    border-radius: 30px;
+    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 95%, rgba(0,0,0,1) 100%);
+    mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 95%, rgba(0,0,0,1) 100%);
+}
+
+/* form section start*/
+.input-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-btn a Link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.submit-btn {
+    color: white;
+    font-size: 21px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    background: #4E73FF;
+    background: linear-gradient(90deg,rgba(78, 115, 255, 1) 0%, rgba(136, 0, 255, 1) 100%);
+    border-radius: 10px;
+    width: 410px;
+    height: 65px;
+    font-weight: 600;
+    transition: transform 0.5s, background 0.5s;
+
+}
+
+.submit-btn:hover{
+    transform: scale(1.05);
+    background: #7C7C7C;
+}
+
+.input-field{
+    border: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #383838;
+    background-color: #202020;
+    border-radius: 10px;
+    width: 410px;
+    height: 65px;
+    font-weight: 600;
+    font-size: 21px;
+}
+/* input section end*/

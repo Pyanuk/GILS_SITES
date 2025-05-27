@@ -1,0 +1,195 @@
+/*To be sure implement border box to all elements*/
+
+/*Define intro start does not work withoud it*/
+/* intro start */
+.intro-start {
+    box-sizing: inherit;
+    padding-top: 85px;
+    display: block;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 800px;
+    max-width: 1900px;
+
+}
+
+.intro-body-start{ 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    padding: 65px;
+    
+}
+/* intro end*/
+
+/*Define that we will use this font*/
+
+/* using gradient as other block*/
+.background-gradient-register1{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #511CE8;
+    background: linear-gradient(90deg,rgba(81, 28, 232, 1) 0%, rgba(183, 0, 255, 1) 100%);
+    z-index: -1; 
+    border-radius: 30px;
+    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 95%, rgba(0,0,0,1) 100%);
+    mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 95%, rgba(0,0,0,1) 100%);
+}
+
+.main{
+    font-family: 'SF-PRO-DISPLAY';
+
+}
+
+/* regcaed start 
+we will use bigger reg card height to contain all content*/
+.regcard-reg{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: #171717;
+    width: 475px;
+    height: 545px;
+    border-radius: 30px;
+}
+
+.upperbuttons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: flex-start;
+    width: 100%;
+    padding: 10px 35px 20px 35px;
+}
+
+.crossbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1C1C1C;
+    border: 0;
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    padding: 0;
+    transition: transform 0.5s, background 0.5s;
+}
+
+.crossbutton:hover{
+    transform: scale(1.05);
+    background: #7C7C7C;
+}
+
+.imagebtnunion{
+    height: 75%;
+    width: 75%;
+}
+
+.unionbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1C1C1C;
+    border: 0;
+    height: 65px;
+    width: 65px;
+    border-radius: 100%;
+    padding: 0;
+    transition: transform 0.5s, background 0.5s;
+}
+
+.unionbutton:hover{
+    transform: scale(1.05);
+    background: #7C7C7C;
+}
+
+.reg-card-desc{
+    margin-top: 0px;
+    padding-top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start; 
+    font-family: 'SF-PRO-DISPLAY';
+    margin: 0px 30px;
+}
+
+.regcardtext{
+    font-weight: bold;
+    margin: 0px;
+    color: #FFFFFF;
+}
+
+.bottom-text{
+    margin-top: 10px;
+    font-weight: bold;
+    color: #A6A6A6;
+}
+
+/* form start*/
+.button-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    gap: 25px;
+}
+
+.input-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.submit-btn a {
+    text-decoration: none;
+    color: inherit;
+}
+.submit-btn{
+    color: white;
+    font-size: 21px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    background: #4E73FF;
+    background: linear-gradient(90deg,rgba(78, 115, 255, 1) 0%, rgba(136, 0, 255, 1) 100%);
+    border-radius: 10px;
+    width: 410px;
+    height: 65px;
+    font-weight: 600;
+    transition: transform 0.5s, background 0.5s;
+}
+
+.submit-btn:hover{
+    transform: scale(1.05);
+    background: #7C7C7C;
+}
+
+.input-field{
+    border: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #383838;
+    background-color: #202020;
+    border-radius: 10px;
+    width: 410px;
+    height: 65px;
+    font-weight: 600;
+    font-size: 21px;
+}
+/* form end*/
+/*regcard end*/

@@ -1,0 +1,137 @@
+/* Main page for all register and login pages contains code for gradiednt block wrapper and main*/
+
+/*To be sure implement border box to all elements
+normal boxing start*/
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+/*normal box end*/
+
+/* body code start */
+body{
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+    overflow: hidden;
+}
+
+.wrapper{
+    
+    margin: 0 auto;
+    margin-top: 90px;
+    padding: 0 20px;
+}
+/* body code end */
+
+/* intor star block for gradiend*/
+
+.intro {
+    box-sizing: inherit;
+    padding-top: 85px;
+    display: block;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    max-height: 800px;
+    max-width: 1900px;
+
+}
+
+/*Define that we will use this font*/
+.main{
+    font-family: 'SF-PRO-DISPLAY';
+
+}
+
+/* using background gradient as another block */
+.background-gradient{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(81,28,232,1) 0%, rgba(70,207,255,1) 100%);
+    z-index: -1; 
+    border-radius: 30px;
+    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 95%, rgba(0,0,0,1) 100%);
+    mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 95%, rgba(0,0,0,1) 100%);
+}
+
+.intro-header{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.intro-body{ 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    padding: 100px;
+    
+}
+/* intro code end*/
+
+/* title code start */
+.title{
+    font-weight: 800;
+    font-size: 4em;
+
+    background: linear-gradient(140deg, rgba(136, 0, 255, 1) 0%, rgba(210, 0, 255, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    margin: 10px 0;
+
+}
+
+.title2{
+    color: white;
+    font-weight: 500;
+    font-size: 3em;
+    margin: 10px 0;
+}
+
+.title3{
+    color: #0010C8;
+    font-weight: 500;
+    font-size: 2em;
+    background: linear-gradient(90deg,rgba(0, 16, 200, 1) 0%, rgba(70, 207, 255, 1) 30%, rgba(210, 0, 255, 1) 60%, rgba(136, 0, 255, 1) 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    margin: 10px 0;
+}
+/* title code end*/
+
+/* button code start */
+.enter-button{
+    padding: 25px 150px;
+    font-weight: 500;
+    font-size: 2em;
+    background: #121212;
+    border-radius: 30px;
+    border: 0;
+    color: white;
+    transition: transform 0.5s, background 0.5s;
+    margin-top: 60px;
+
+}
+
+.enter-button:hover {
+    transform: scale(1.05);
+    background: #7C7C7C;
+}
+/* button code end*/
