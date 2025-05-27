@@ -12,3 +12,12 @@
     -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 95%, rgba(0,0,0,1) 100%);
     mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 95%, rgba(0,0,0,1) 100%);
 }
+.regcard {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: #171717;
+    width: 475px;
+    height: 545px;
+    border-radius: 30px;
+}
